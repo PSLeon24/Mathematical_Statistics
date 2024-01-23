@@ -71,7 +71,6 @@
 ## 5.3. 극한 적률모함수
 ## 5.4. 비정규 경우에서 순서통계량의 사용
 
---
 
 # Practical Statistics for Data Scientists
 ## New 1. 탐색적 데이터 분석 (practice/Practice EDA~.ipynb)
