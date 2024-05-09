@@ -54,6 +54,15 @@
   - 정규분포에서의 모수 공간:  평균은 임의의 실수값, 분산은 0보다 큰 실수
 
 ### 1.6. Poisson distribution
+- 포아송 분포(Poisson distribution): '단위 시간/공간 당 사건의 발생 횟수'에 대한 확률 분포(e.g., 1시간에 몇 건의 구매가 발생했는지)
+  - <img width="354" alt="스크린샷 2024-05-09 오전 11 25 00" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/4239e79d-c65d-42bb-b632-b6d07930821d">
+  - 특징: 평균과 분산 모두 모수인 λ로 동일
+    - 실제 데이터로부터 포아송 관련 모델링을 할 때는 과산포인 경우가 많은데 이를 해결하기 위해 음이항 분포negative binomial을 사용하기도 함
+    - 과산포(overdispersion): 평균보다 분산이 큰 경우
+  - 포아송 분포는 이항 분포로부터 유도될 수도 있음. 이항 분포에서 n이 무척 크고 p가 낮아지면 λ = np인 포아송으로 근사가 가능
+    - 대표적인 예시: 책의 한 페이지에서 나타날 수 있는 오탈자의 수
+    - 수많은 글자(n이 크고) 중 오탈자의 수는 무척 적음(p가 작음). 포아송 관점에서는 각 페이지를 단위 공간으로 보고 페이지 당 오탈자의 수가 포아송을 따른다고 볼 수 있음
+
 ### 1.7. Standardization and Normalization
 ### 1.8. Approximation
 ### 1.9. Negative binomial distribution
