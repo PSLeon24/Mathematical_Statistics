@@ -19,7 +19,17 @@
     - 확률 분포에서의 모수(parameter): 확률 분포의 특성을 나타내는 수(e.g., 베르누이 분포에서 동전에서 앞면이 나올 확률, 정규 분포에서는 평균과 분산, 통계학에서 모수는 항상 그리스 문자로 표기)
   -  "{": x의 여러 가지 케이스들을 나눠서 보는 것
 - 지지역(support): 확률 분포에서 확률 값이 0이 아닌 확률 변수 x의 집합(즉, 발생 가능한 사건(예: head, tail)은 지지역으로 바뀔 수 있으며, 발생 불가능한 사건(예: 동전을 던졌는데 head도 tail도 아닌 동전이 세워진다던지)은 불가능한 사건이니까 확률이 0이며, 따라서 지지역으로 바뀔 수 없음)
+
 ### 1.3. pmf vs pdf
+- 이산형 확률 분포(discrete probability distribution): 확률 변수 X의 값이 이산적(discrete)일 때, 다시 말해 0이나 1, 2와 같이 단절된 값을 가질 수 있는 확률 분포(e.g., 베르누이 분포)
+- 연속형 확률 분포(continuous probability distribution): 확률 변수 X의 값이 연속적(continuous)일 때의 확률 분포(e.g., 연속 균등 분포)
+  - 연속형 확률 변수의 확률 값을 구할 때는 면적을 구하기 위해 적분을 이용(e.g., 아래는 연속 균등 분포를 푸는 수식)
+  - <img width="400" alt="스크린샷 2024-05-09 오전 9 44 26" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/d3339e40-1459-4dca-9aa8-e66deac260b4">
+
+- 확률 질량 함수(probability mass function): 이산형 확률 분포에 대한 확률 함수
+- 확률 밀도 함수(probability density function): 연속형 확률 분포에 대한 확률 함수
+  - 확률 밀도 함수에서는 X가 주어진 범위(표본 공간) 내에서 임의의 실수 값을 가짐
+
 ### 1.4. Normal distribution
 ### 1.5. Binomial distribution
 ### 1.6. Poisson distribution
