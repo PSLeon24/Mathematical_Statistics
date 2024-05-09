@@ -11,8 +11,8 @@
 - P(X = head) = p에서 P는 확률 분포, X는 확률 변수, head는 사건, p는 확률
 
 ### 1.2. Probability distribution
-- 균일 분포(uniform distribution): 사건이 무엇인지와 무관하게 확률이 동일한 분포
-- 베르누이 분포(bernoulli distribution): 결과 값이 둘 중 하나만 가능한 분포 → 두 가지인 시도, 예컨대 생존/사망이나 정품/불량 등의 수많은 문제를 다룰 수 있음
+- 균일 분포(Uniform distribution): 사건이 무엇인지와 무관하게 확률이 동일한 분포
+- 베르누이 분포(Bernoulli distribution): 결과 값이 둘 중 하나만 가능한 분포 → 두 가지인 시도, 예컨대 생존/사망이나 정품/불량 등의 수많은 문제를 다룰 수 있음
   - <img width="392" alt="스크린샷 2024-05-09 오전 9 27 33" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/9fc2194b-100a-444d-a380-2394de9c1300">
   - "P(X = x)": 확률 변수 X가 값 x(예를 들어, 1)를 가질 때의 확률
   - ";" 뒤의 p는 p가 모수(parameter)로 주어진다는 의미
@@ -21,26 +21,38 @@
 - 지지역(support): 확률 분포에서 확률 값이 0이 아닌 확률 변수 x의 집합(즉, 발생 가능한 사건(예: head, tail)은 지지역으로 바뀔 수 있으며, 발생 불가능한 사건(예: 동전을 던졌는데 head도 tail도 아닌 동전이 세워진다던지)은 불가능한 사건이니까 확률이 0이며, 따라서 지지역으로 바뀔 수 없음)
 
 ### 1.3. pmf vs pdf
-- 이산형 확률 분포(discrete probability distribution): 확률 변수 X의 값이 이산적(discrete)일 때, 다시 말해 0이나 1, 2와 같이 단절된 값을 가질 수 있는 확률 분포(e.g., 베르누이 분포)
-- 연속형 확률 분포(continuous probability distribution): 확률 변수 X의 값이 연속적(continuous)일 때의 확률 분포(e.g., 연속 균등 분포)
+- 이산형 확률 분포(Discrete probability distribution): 확률 변수 X의 값이 이산적(discrete)일 때, 다시 말해 0이나 1, 2와 같이 단절된 값을 가질 수 있는 확률 분포(e.g., 베르누이 분포)
+- 연속형 확률 분포(Continuous probability distribution): 확률 변수 X의 값이 연속적(continuous)일 때의 확률 분포(e.g., 연속 균등 분포)
   - 연속형 확률 변수의 확률 값을 구할 때는 면적을 구하기 위해 적분을 이용(e.g., 아래는 연속 균등 분포를 푸는 수식)
-  - <img width="400" alt="스크린샷 2024-05-09 오전 9 44 26" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/d3339e40-1459-4dca-9aa8-e66deac260b4">
+  - 이항분포의 확률 질량 함수(pmf)
+    - <img width="400" alt="스크린샷 2024-05-09 오전 9 44 26" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/d3339e40-1459-4dca-9aa8-e66deac260b4">
 
-- 확률 질량 함수(probability mass function): 이산형 확률 분포에 대한 확률 함수
-- 확률 밀도 함수(probability density function): 연속형 확률 분포에 대한 확률 함수
+- 확률 질량 함수(Probability mass function): 이산형 확률 분포에 대한 확률 함수
+- 확률 밀도 함수(Probability density function): 연속형 확률 분포에 대한 확률 함수
   - 확률 밀도 함수에서는 X가 주어진 범위(표본 공간) 내에서 임의의 실수 값을 가짐
 
 ### 1.4. Normal distribution
-- 정규분포(normal distribuiton): 연속 확률 분포의 하나로, 자연적으로 흔히 볼 수 있는 분포. 가우스 분포
+- 정규분포(Normal distribuiton): 연속 확률 분포의 하나로, 자연적으로 흔히 볼 수 있는 분포. 가우스 분포
   - 특징: 대칭(symmetric)이며 종 모양의 형태(bell shape)
 - 중심극한정리(CLT, Central Limit Theorem): 표본 평균의 분포가 정규분포를 따른다는 정리
-- 표준 정규 분포(z-distribution, standard normal distribution): 평균이 0이고 표준 편차가 1인 정규분포
+- 표준 정규 분포(Z-distribution, Standard normal distribution): 평균이 0이고 표준 편차가 1인 정규분포
   - 모든 정규 분포는 표준 정규 분포로 변환(transformation)될 수 있음.
   - 임의의 정규 분포를 표준 정규 분포로 변환하는 과정
     1. 평균이 μ이고 분산이 σ²인 정규 분포를 다음과 같이 표시: X ~ Normal(μ, σ²)
     2. Y(Z-score) = (X - μ) / σ
     3. Y ~ Normal(0, 1)
+
 ### 1.5. Binomial distribution
+- 이항 분포(Binomial distribution): 1회의 시도에서 성공/실패를 다루었던 분포인 베르누이 분포를 n번의 시도로 확장한 분포. 즉, n회의 베르누이 시행을 합한 것
+  - <img width="481" alt="스크린샷 2024-05-09 오전 11 10 12" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/f69988f6-e76e-41a1-8edd-7422a00af3e3">
+  - 첫번째 항: 조합(combination), 두번째 항: 성공 횟수 x, 세번째 항: 실패 횟수 n-x번
+  - 이항 분포의 평균: np, 분산: np(1-p)
+    - n이 고정되었을 때 p가 0과 가깝거나 1에 가까우면 그 분산 값이 커지고, p가 0.5일 때 분산은 최소가 됨
+
+- 모수 공간(parameter space): 모수가 의미 있는 값을 가질 수 있는 공간
+  - 이항 분포에서의 모수 공간: n은 1보다 크거나 같은 정수, p는 0과 1 사이의 실수
+  - 정규분포에서의 모수 공간:  평균은 임의의 실수값, 분산은 0보다 큰 실수
+
 ### 1.6. Poisson distribution
 ### 1.7. Standardization and Normalization
 ### 1.8. Approximation
@@ -68,7 +80,7 @@
   - 편차, 분산, 표준편차(분산의 제곱근), 평균절대편차(Manhattan norm, L1 norm), 중앙값의 중위절대편차(MAD), 순서통계량, 범위, 백분위수, 사분위범위(IQR)을 확인
     - 평균절대편차(mean absolute deviation): 평균과의 편차의 절댓값의 평균(편차 자체의 평균을 구하게 되면 음의 편차가 양의 편차를 상쇄시키므로 바람직하지 않음)
     - 중앙값의 중위절대편차(median absolute deviation from the median): 중간값과의 편차의 절댓값의 중간값, statsmodels 패키지의 strong.scale.mad() 함수 사용
-    - 순서통계량(순위, order statistics): 정렬(순위) 데이터를 나타내는 통계량, 가장 기본이 되는 측도가 범위(range)
+    - 순서통계량(순위, order statistics): 정렬(순위) 데이터를 나타내는 통계량, 가장 기본이 되는 측도가 범위(range)
     - 범위(range): 최댓값과 최솟값의 차이(최댓값 - 최솟값), 범위는 극단값에 매우 민감하여 데이터의 변이를 측정하는데 크게 유용하지 않음 ~ 사분위범위(IQR)를 활용해 극복
   - 분산, 표준편차, 평균절대편차 모두 극단값에 로버스트하지 않음 → robust한 변이 추정값으로 중간값의 중위절대편차(MAD)가 있음
     - 분산과 표준편차는 제곱편차를 사용하기 때문에 특히 극단값에 민감함
