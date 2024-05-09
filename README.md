@@ -64,8 +64,18 @@
     - 수많은 글자(n이 크고) 중 오탈자의 수는 무척 적음(p가 작음). 포아송 관점에서는 각 페이지를 단위 공간으로 보고 페이지 당 오탈자의 수가 포아송을 따른다고 볼 수 있음
 
 ### 1.7. Standardization and Normalization
+- 스케일링(Scaling): 숫자의 스케일을 조절하는 것으로 대표적인 방법으로 표준화와 정규화가 있으며, 데이터의 분포 형태는 바꾸지 않음
+- 표준화(Standardization): 평균을 0, 표준편차를 1로 맞춰주는 변환
+  - <img width="100" alt="스크린샷 2024-05-09 오전 11 35 21" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/0fa9a0a0-c0f9-4c23-8c78-d5ab2158821e">
+
+- 정규화(Normalization): 최솟값을 0, 최댓값을 1로 맞춰주는 변환
+  - <img width="163" alt="스크린샷 2024-05-09 오전 11 35 33" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/0c24dc70-0136-49f1-97aa-2801d0a810f0">
+
 ### 1.8. Approximation
+
 ### 1.9. Negative binomial distribution
+
+
 # 2. 기댓값, 그리고 더 많은 분포
 # 3. 점 추정과 구간 추정
 # 4. 가설 검정: t test와 ANOVA
