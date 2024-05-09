@@ -31,6 +31,15 @@
   - 확률 밀도 함수에서는 X가 주어진 범위(표본 공간) 내에서 임의의 실수 값을 가짐
 
 ### 1.4. Normal distribution
+- 정규분포(normal distribuiton): 연속 확률 분포의 하나로, 자연적으로 흔히 볼 수 있는 분포. 가우스 분포
+  - 특징: 대칭(symmetric)이며 종 모양의 형태(bell shape)
+- 중심극한정리(CLT, Central Limit Theorem): 표본 평균의 분포가 정규분포를 따른다는 정리
+- 표준 정규 분포(z-distribution, standard normal distribution): 평균이 0이고 표준 편차가 1인 정규분포
+  - 모든 정규 분포는 표준 정규 분포로 변환(transformation)될 수 있음.
+  - 임의의 정규 분포를 표준 정규 분포로 변환하는 과정
+    1. 평균이 μ이고 분산이 σ²인 정규 분포를 다음과 같이 표시: X ~ Normal(μ, σ²)
+    2. Y(Z-score) = (X - μ) / σ
+    3. Y ~ Normal(0, 1)
 ### 1.5. Binomial distribution
 ### 1.6. Poisson distribution
 ### 1.7. Standardization and Normalization
