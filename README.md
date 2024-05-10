@@ -12,7 +12,7 @@
 
 ### 1.2. Probability distribution
 - 균일 분포(Uniform distribution): 사건이 무엇인지와 무관하게 확률이 동일한 분포
-- 베르누이 분포(Bernoulli distribution): 결과 값이 둘 중 하나만 가능한 분포 → 두 가지인 시도, 예컨대 생존/사망이나 정품/불량 등의 수많은 문제를 다룰 수 있음
+- 베르누이 분포(Bernoulli distribution): 확률 변수 X의 값이 2개(0 or 1)인 분포 → 두 가지인 시도, 예컨대 생존/사망이나 정품/불량 등의 수많은 문제를 다룰 수 있음
   - <img width="392" alt="스크린샷 2024-05-09 오전 9 27 33" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/9fc2194b-100a-444d-a380-2394de9c1300">
   - "P(X = x)": 확률 변수 X가 값 x(예를 들어, 1)를 가질 때의 확률
   - ";" 뒤의 p는 p가 모수(parameter)로 주어진다는 의미
@@ -22,13 +22,17 @@
 
 ### 1.3. pmf vs pdf
 - 이산형 확률 분포(Discrete probability distribution): 확률 변수 X의 값이 이산적(discrete)일 때, 다시 말해 0이나 1, 2와 같이 단절된 값을 가질 수 있는 확률 분포(e.g., 베르누이 분포)
+  - 이산표본공간에서 정의된 확률 변수의 값이 유한하거나 countably infinite
+  - 종류: 베르누이 분포, 이항 분포, 기하 분포, 다항 분포, 포아송 분포
 - 연속형 확률 분포(Continuous probability distribution): 확률 변수 X의 값이 연속적(continuous)일 때의 확률 분포(e.g., 연속 균등 분포)
+  - 확률 변수의 값이 무한개이며 셀 수 없음
   - 연속형 확률 변수의 확률 값을 구할 때는 면적을 구하기 위해 적분을 이용(e.g., 아래는 연속 균등 분포를 푸는 수식)
+  - 종류: 균등분포, 정규분포, 카이제곱 분포, t-분포, F 분포
   - 이항분포의 확률 질량 함수(pmf)
     - <img width="400" alt="스크린샷 2024-05-09 오전 9 44 26" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/d3339e40-1459-4dca-9aa8-e66deac260b4">
 
-- 확률 질량 함수(Probability mass function): 이산형 확률 분포에 대한 확률 함수
-- 확률 밀도 함수(Probability density function): 연속형 확률 분포에 대한 확률 함수
+- 확률 질량 함수(Probability mass function): 이산형 확률 분포에 대한 확률 함수, 이산확률변수 X의 값 x1, ..., xn의 각 확률을 대응
+- 확률 밀도 함수(Probability density function): 연속형 확률 분포에 대한 확률 함수, 확률 변수 X가 어떤 구간 [l, u]의 모든 값을 취하고 이 구간에서의 함수 f(x)
   - 확률 밀도 함수에서는 X가 주어진 범위(표본 공간) 내에서 임의의 실수 값을 가짐
 
 ### 1.4. Normal distribution
@@ -49,12 +53,14 @@
   - 이항 분포의 평균: np, 분산: np(1-p)
     - n이 고정되었을 때 p가 0과 가깝거나 1에 가까우면 그 분산 값이 커지고, p가 0.5일 때 분산은 최소가 됨
 
+- 다항 분포(Mulitinomial distribution): 이항 분포(0 or 1) → 다항 분포(n1, n2, n3, ...)
+
 - 모수 공간(parameter space): 모수가 의미 있는 값을 가질 수 있는 공간
   - 이항 분포에서의 모수 공간: n은 1보다 크거나 같은 정수, p는 0과 1 사이의 실수
   - 정규분포에서의 모수 공간:  평균은 임의의 실수값, 분산은 0보다 큰 실수
 
 ### 1.6. Poisson distribution
-- 포아송 분포(Poisson distribution): '단위 시간/공간 당 사건의 발생 횟수'에 대한 확률 분포(e.g., 1시간에 몇 건의 구매가 발생했는지)
+- 포아송 분포(Poisson distribution): '단위 시간/공간 내 사건의 발생 횟수'에 대한 확률 분포(e.g., 1시간에 몇 건의 구매가 발생했는지)
   - <img width="354" alt="스크린샷 2024-05-09 오전 11 25 00" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/4239e79d-c65d-42bb-b632-b6d07930821d">
   - 특징: 평균과 분산 모두 모수인 λ로 동일
     - 실제 데이터로부터 포아송 관련 모델링을 할 때는 과산포인 경우가 많은데 이를 해결하기 위해 음이항 분포(negative binomial)을 사용하기도 함
