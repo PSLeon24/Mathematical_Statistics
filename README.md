@@ -21,7 +21,7 @@
 - 지지역(support): 확률 분포에서 확률 값이 0이 아닌 확률 변수 x의 집합(즉, 발생 가능한 사건(예: head, tail)은 지지역으로 바뀔 수 있으며, 발생 불가능한 사건(예: 동전을 던졌는데 head도 tail도 아닌 동전이 세워진다던지)은 불가능한 사건이니까 확률이 0이며, 따라서 지지역으로 바뀔 수 없음)
 
 ### 1.3. pmf vs pdf
-- 이산형 확률 분포(Discrete probability distribution): 확률 변수 X의 값이 이산적(discrete)일 때, 다시 말해 0이나 1, 2와 같이 단절된 값을 가질 수 있는 확률 분포(e.g., 베르누이 분포)
+- 이산형 확률 분포(Discrete probability distribution): 확률 변수 X의 값이 이산적(discrete)일 때의 확률 분포(e.g., 베르누이 분포)
   - 이산표본공간에서 정의된 확률 변수의 값이 유한하거나 countably infinite
   - 종류: 베르누이 분포, 이항 분포, 기하 분포, 다항 분포, 포아송 분포
 - 연속형 확률 분포(Continuous probability distribution): 확률 변수 X의 값이 연속적(continuous)일 때의 확률 분포(e.g., 연속 균등 분포)
