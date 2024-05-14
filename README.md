@@ -17,7 +17,10 @@
   - "P(X = x)": 확률 변수 X가 값 x(예를 들어, 1)를 가질 때의 확률
   - ";" 뒤의 p는 p가 모수(parameter)로 주어진다는 의미
     - 확률 분포에서의 모수(parameter): 확률 분포의 특성을 나타내는 수(e.g., 베르누이 분포에서 동전에서 앞면이 나올 확률, 정규 분포에서는 평균과 분산, 통계학에서 모수는 항상 그리스 문자로 표기)
-  -  "{": x의 여러 가지 케이스들을 나눠서 보는 것
+  - "{": x의 여러 가지 케이스들을 나눠서 보는 것
+  - 성질
+    - ![image](https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/bebe6271-7c2e-45ff-a587-cbce8e863b79)
+
 - 지지역(support): 확률 분포에서 확률 값이 0이 아닌 확률 변수 x의 집합(즉, 발생 가능한 사건(예: head, tail)은 지지역으로 바뀔 수 있으며, 발생 불가능한 사건(예: 동전을 던졌는데 head도 tail도 아닌 동전이 세워진다던지)은 불가능한 사건이니까 확률이 0이며, 따라서 지지역으로 바뀔 수 없음)
 
 ### 1.3. pmf vs pdf
@@ -51,6 +54,7 @@
   - <img width="481" alt="스크린샷 2024-05-09 오전 11 10 12" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/f69988f6-e76e-41a1-8edd-7422a00af3e3">
   - 첫번째 항: 조합(combination), 두번째 항: 성공 횟수 x, 세번째 항: 실패 횟수 n-x번
   - 이항 분포의 평균: np, 분산: np(1-p)
+    - ![image](https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/fe9169ee-52f9-4823-8710-0a74d48a87fc)
     - n이 고정되었을 때 p가 0과 가깝거나 1에 가까우면 그 분산 값이 커지고, p가 0.5일 때 분산은 최소가 됨
 
 - 다항 분포(Mulitinomial distribution): 이항 분포(0 or 1) → 다항 분포(n1, n2, n3, ...)
