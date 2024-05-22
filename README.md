@@ -93,6 +93,15 @@
   - 결국, 확률분포를 담고있는 확률변수에 취해지는 확률적 가중평균
 
 ### 2.2. Independence
+- 조건부 확률(Conditional probability): 주어진 사건이 일어났다는 가정 하에 다른 한 사건이 일어날 확률
+  - <img width="200" alt="스크린샷 2024-05-22 오후 3 06 45" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/05572b84-dd48-4f1c-a4d5-804a00c0a32d">
+  - 분자: 사건 A와 사건 B가 동시에 일어났다는 뜻, 분모: 사건 B가 일어났다는 뜻
+  - 즉, 사건 B가 일어났을 때, 사건 A와 사건 B가 동시에 일어났을 확률
+- 독립(independence): 둘 중 하나의 사건이 일어날 확률이 다른 사건이 일어날 확률에 영향을 미치지 않는다는 것
+  - 독립이라는 것은 확률 분포를 통해 어떠한 사건이나 특성들이 관련 있는지를 보는 것
+  - <img width="140" alt="스크린샷 2024-05-22 오후 3 09 36" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/4634f3f9-3db3-4b79-b691-6e391cffc191">
+  - 즉, 조건부 확률이 원래의 확률과 같다면 두 사건은 독립
+- 종속(dependent): 독립이 아닌 관계
 
 ### 2.3. Sample & statistic
 
