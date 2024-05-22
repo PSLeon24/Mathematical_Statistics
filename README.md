@@ -83,10 +83,27 @@
 
 ### 1.8. Negative binomial distribution
 
-
 # 2. 기댓값, 그리고 더 많은 분포
+### 2.1. Expectation
+
+### 2.2. Independence
+
+### 2.3. Sample & statistic
+
+### 2.4. Chi-squared distribution
+
+### 2.5. F and t distribution
+
+### 2.6. Cumulative distribution function
+
+### 2.7. Quantile
+
+### 2.8. Compare means
+
+### 2.9. Secretary problem
+
 # 3. 점 추정과 구간 추정
-# 4. 가설 검정: t test와 ANOVA
+# 4. 가설 검정: t-test와 ANOVA
 
 
 # Practical Statistics for Data Scientists
