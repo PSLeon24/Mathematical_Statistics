@@ -81,9 +81,7 @@
 - 정규화(Normalization): 최솟값을 0, 최댓값을 1로 맞춰주는 변환
   - <img width="163" alt="스크린샷 2024-05-09 오전 11 35 33" src="https://github.com/PSLeon24/Mathematical_Statistics/assets/59058869/0c24dc70-0136-49f1-97aa-2801d0a810f0">
 
-### 1.8. Approximation
-
-### 1.9. Negative binomial distribution
+### 1.8. Negative binomial distribution
 
 
 # 2. 기댓값, 그리고 더 많은 분포
