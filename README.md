@@ -1,4 +1,4 @@
-ㅎ# Mathematical_Statistics
+# Mathematical_Statistics
 데이터 사이언스를 위한 수리통계학 학습 노트
 
 # 1. 확률과 분포
